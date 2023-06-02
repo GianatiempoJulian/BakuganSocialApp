@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* ======== LAYOUT ======== */
+
+body {
+    background-color: #313131;
+    height: 100vh;
+}
+
+main {
+    height: 100%;
+}
+
+nav {
+    background-color: #ee2b47;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    padding: 20px;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+}
+
+
+/* ======== USER:PROFILE ======== */
+
+.user-profile-container {
+    background-color: #414141;
+    margin: 10px;
+    height: 85%;
+    padding: 10px;
+    display: grid;
+    margin-top: 20px;
+}
+
+.user-information-container {
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.user-information-container img {
+    width: 150px;
+    height: 150px;
+    margin-left: 12px;
+}
+
+.user-text {
+    color: #e5e5e5;
+    margin-left: 12px;
+}
+
+.social-media {
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 15px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+.collection-btn {
+    background-color: #ee2b47;
+    border-radius: 5px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-decoration: none;
+    color: #e5e5e5;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.user-extra-information-container p {
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+.favorites-container {
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    height: 200px;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: repeat(3, 33%);
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.favorites-container img {
+    width: 100px;
+    height: 80px;
+}
+
+
+/* ======== USER:EDIT ======== */
+
+.user-edit-container {
+    background-color: #414141;
+    margin: 10px;
+    height: 85%;
+    padding: 10px;
+    display: grid;
+    margin-top: 20px;
+}
+
+.img-container {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.img-container img {
+    width: 250px;
+    height: 250px;
+}
+
+.user-edit-information {
+    width: 100%;
+    height: 43%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.user-edit-information input {
+    width: 200px;
+    height: 50px;
+}
+
+.user-edit-btn {
+    width: 100%;
+    height: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-edit-btn button {
+    width: 150px;
+    height: 50px;
+    background-color: #ee2b47;
+    color: #e5e5e5;
+    border-style: none;
+}
+
+
+/* ======== USER:COLLECTION ======== */
+
+
+/* ======== BAKUGAN:LIST ======== */
+
+.user-collection-container {
+    background-color: #414141;
+    margin: 10px;
+    height: 85%;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 10% 85% 5%;
+    margin-top: 20px;
+}
+
+.collection-info-container {
+    display: flex;
+    color: #e5e5e5;
+    align-items: center;
+    font-size: 10px;
+}
+
+.collection-info-container h1 {
+    margin-left: 10px;
+}
+
+.collection-info-container select {
+    margin-right: 15px;
+}
+
+.bakugan-container {
+    display: grid;
+    grid-template-rows: repeat(3, 33%);
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+    justify-items: center;
+}
+
+.bakugan-card {
+    width: 90%;
+    background-color: #e5e5e5;
+    display: grid;
+    border-radius: 0px 28px 0px 28px;
+    border: 0px solid #000000;
+}
+
+.bakugan-img {
+    width: 100%;
+    height: 100%;
+}
+
+.bakugan-name {
+    display: flex;
+    background-color: #ee2b47;
+    padding: 5px;
+    font-weight: 600;
+    color: #e5e5e5;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 0px 28px;
+}
+
+.delete-btn,
+.add-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e5e5e5;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+}
+
+.delete-btn {
+    background-color: red;
+}
+
+.add-btn {
+    background-color: green;
+}
+
+.attributes-container {
+    display: grid;
+    grid-template-columns: repeat(6, 15%);
+}
+
+.attribute-img {
+    width: 28px;
+    height: 38px;
+}
+
+
+/* ======== PAGINATION ======== */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.pagination nav {
+    display: flex;
+    background: none;
+    font-weight: 600;
+    padding: 5px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination nav .hidden {
+    display: none;
+}
+
+.pagination nav div {
+    display: flex;
+    gap: 10px;
+}
+
+.pagination nav div span,
+.pagination nav div a {
+    text-decoration: none;
+    color: #ee2b47;
+}
